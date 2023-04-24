@@ -5,7 +5,7 @@ public class DefaultCountingOutRhymer {
     public static final int SIZE_OF_TAB = 12;
     public static final int STARTING_TOTAL_VALUE = -1;
     public static final int FULL_INT_TAB = 11;
-    private int[] NUMBERS = new int[SIZE_OF_TAB];
+    private final int[] NUMBERS = new int[SIZE_OF_TAB];
 
     public int total = STARTING_TOTAL_VALUE;
 
