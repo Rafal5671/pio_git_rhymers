@@ -7,10 +7,14 @@ class RhymersDemo {
 
     public static void main(String[] args) {
         RhymersFactory factory = new DefaultRhymersFactory();
-        
-        DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
+
+        DefaultCountingOutRhymer[] rhymers = {factory.getStandardRhymer(), factory.getFalseRhymer(),
                 factory.getFifoRhymer(), factory.getHanoiRhymer()};
-        
+
+        testRhymers(rhymers);
+    }
+    private static  void testRhymers(DefaultCountingOutRhymer[] rhymers)
+    {
         for (int i = 1; i < 15; i++)
             for (int j = 0; j < 3; j++)
                 rhymers[j].countIn(i);
